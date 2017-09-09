@@ -10,4 +10,4 @@ hacktsc
   - 生的多，養的好，死的少（少死多賣售價高）
 
 * 土地
-  - SHP 檔案資料
+  - SHP 檔案資料 (讀取方式：http://vinn.logdown.com/posts/2014/07/21/note-use-python-shapefile-files-processed)
