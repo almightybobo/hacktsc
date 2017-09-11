@@ -1,13 +1,5 @@
 hacktsc
-* room 
-  - ¶º©±¿¤¥«¡G¤è«KÅU«È·j´M
-  - ¡]°h©Ð-¤J±J¡^* ­q©Ð¼Æ¡×­q©Ð¼Æ¶q
-  - ¥Ø¼Ð¡G¶}µo¥Ø¼ÐÅU«È¡A¥iµ²¦X¨ä¥L¬F©²¶}©ñ¸ê®Æ¥H¤Î¥x¿}¬J¦³ªº¶}©ñ¸ê®Æ¥h°µ¬ã¨s
-
 * pig
-  - §ä¥XÀu¨}ºØ½Þ¡A§Q¥ÎÂø¥æÀu¶Õ°ö¨|
-  - ¥Î°ò¦]±±¨î¡A¦ýÀÉ®×¤º¦b 80 ³õ¸¹¤~¦³¬ÛÃö¸ê°T
-  - ¥Íªº¦h¡A¾iªº¦n¡A¦ºªº¤Ö¡]¤Ö¦º¦h½æ°â»ù°ª¡^
-
-* ¤g¦a
-  - SHP ÀÉ®×¸ê®Æ (Åª¨ú¤è¦¡¡Ghttp://vinn.logdown.com/posts/2014/07/21/note-use-python-shapefile-files-processed)
+  - æ‰¾å‡ºå„ªè‰¯ç¨®è±¬ï¼Œåˆ©ç”¨é›œäº¤å„ªå‹¢åŸ¹è‚²
+  - ç”¨åŸºå› æŽ§åˆ¶ï¼Œä½†æª”æ¡ˆå…§åœ¨ 80 å ´è™Ÿæ‰æœ‰ç›¸é—œè³‡è¨Š
+  - ç”Ÿçš„å¤šï¼Œé¤Šçš„å¥½ï¼Œæ­»çš„å°‘ï¼ˆå°‘æ­»å¤šè³£å”®åƒ¹é«˜ï¼‰
