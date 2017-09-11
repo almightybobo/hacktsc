@@ -5,4 +5,5 @@ hacktsc
   - 生的多，養的好，死的少（少死多賣售價高）
 
 ![image](https://github.com/almightybobo/hacktsc/blob/master/1.png)
+
 ![image](https://github.com/almightybobo/hacktsc/blob/master/2.png)
