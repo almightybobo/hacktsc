@@ -1,10 +1,12 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('../..//data/raw_utf8/identification.csv')
+df = pd.read_csv('../../data/raw_utf8/identification.csv')
 df_main = df[['場號', '部門', '耳號', '年期', '性別', '出生日期', '胎次', '母耳號', \
               '父耳號', '配種日期', '初配種日期', '分娩日期', '斷乳日期', '品種']]
-
+df['耳號'] = df['耳號'].astype(str).str.rjust(7, '0')
+df_main['母耳號'] = df_main['母耳號'].str.rjust(7, '0')
+df_main['父耳號'] = df_main['父耳號'].str.rjust(7, '0')
 DF = pd.DataFrame()
 DF['ID'] = df['性別'].astype(str) + '|' + df['場號'].astype(str) + '|' + df['部門'].astype(str) + \
            '|' + df['耳號'].astype(str) + '|' + df['年期'].astype(str)

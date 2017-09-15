@@ -5,6 +5,10 @@ df_br = pd.read_csv('../../data/raw_utf8/birth.csv', sep = ',')
 df_br = df_br.loc[:,['場號', '部門', '耳號', '年期', '胎次', '配種公豬耳號', \
                      '公豬年期', '分娩活仔數', '死亡仔數', '斷乳仔數', \
                      '斷乳窩重', '分娩日期', '母豬離乳日期', '初配日期', '受孕日期']]
+df_br['耳號'] = df_br['耳號'].astype(str).str.replace('.0', '')
+df_br['耳號'] = df_br['耳號'].str.rjust(7,'0')
+df_br['配種公豬耳號'] = df_br['配種公豬耳號'].astype(str).str.replace('.0', '')
+df_br['配種公豬耳號'] = df_br['配種公豬耳號'].str.rjust(7,'0')
 # 去除死亡數異常的行位
 df_br = df_br[df_br['分娩活仔數'] == (df_br['死亡仔數'] + df_br['斷乳仔數'])]
 # 新增平均活仔重的欄位
