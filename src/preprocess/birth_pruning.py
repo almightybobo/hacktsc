@@ -17,4 +17,4 @@ df_br['公ID'] = '1|' + df_br['場號'].astype(str) + '|' + df_br['部門'].asty
 # 除去冗餘欄位
 df_br = df_br.drop(['場號', '部門', '耳號', '年期', '配種公豬耳號', '公豬年期'],\
     axis=1)
-df_br.to_csv('birth_pruned.csv', index=False)
+df_br.to_csv('../../data/birth_pruned.csv', index=False)
