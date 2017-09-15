@@ -6,8 +6,8 @@ df_main = df[['場號', '部門', '耳號', '年期', '性別', '出生日期', 
               '父耳號', '配種日期', '初配種日期', '分娩日期', '斷乳日期', '品種']]
 
 DF = pd.DataFrame()
-DF['ID'] = df['場號'].astype(str) + '|' + df['部門'].astype(str) + '|' \
-              + df['耳號'].astype(str) + '|' + df['年期'].astype(str)
+DF['ID'] = df['性別'].astype(str) + '|' + df['場號'].astype(str) + '|' + df['部門'].astype(str) + \
+           '|' + df['耳號'].astype(str) + '|' + df['年期'].astype(str)
 
 df_main['配種日期'] = pd.to_datetime(df_main['配種日期'], errors='coerce')
 df_main['出生日期'] = pd.to_datetime(df_main['出生日期'], errors='coerce')
@@ -23,12 +23,12 @@ DF['配種到分娩'] = df_main['分娩日期'].sub(df_main['配種日期'], axi
 DF['配種到分娩'] = DF['配種到分娩'] / np.timedelta64(1, 'D')
 DF['分娩到斷乳'] = df_main['斷乳日期'].sub(df_main['分娩日期'], axis=0)
 DF['分娩到斷乳'] = DF['分娩到斷乳'] / np.timedelta64(1, 'D')
-
+'''
 DF = DF[DF['出生到配種成功'] > 0]
 DF = DF[DF['配種到成功'] >= 0]
 DF = DF[DF['配種到分娩'] > 0]
 DF = DF[DF['分娩到斷乳'] > 0]
-
+'''
 DF['胎次'] = df_main['胎次']
 DF['母耳號'] = df_main['母耳號']
 DF['父耳號'] = df_main['父耳號']
