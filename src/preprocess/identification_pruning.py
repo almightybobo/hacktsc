@@ -23,12 +23,12 @@ DF['配種到分娩'] = df_main['分娩日期'].sub(df_main['配種日期'], axi
 DF['配種到分娩'] = DF['配種到分娩'] / np.timedelta64(1, 'D')
 DF['分娩到斷乳'] = df_main['斷乳日期'].sub(df_main['分娩日期'], axis=0)
 DF['分娩到斷乳'] = DF['分娩到斷乳'] / np.timedelta64(1, 'D')
-'''
+
 DF = DF[DF['出生到配種成功'] > 0]
 DF = DF[DF['配種到成功'] >= 0]
 DF = DF[DF['配種到分娩'] > 0]
 DF = DF[DF['分娩到斷乳'] > 0]
-'''
+
 DF['胎次'] = df_main['胎次']
 DF['母耳號'] = df_main['母耳號']
 DF['父耳號'] = df_main['父耳號']
