@@ -12,7 +12,7 @@ boy_id = df_birth['公ID'].tolist()
 all_id = df_id['ID'].tolist()
 species = df_id['品種'].tolist()
 birth = df_id['出生日期'].tolist()
-
+count = 0
 g_species, g_birth = [], []
 for i in girl_id:
     if i in all_id:
@@ -20,9 +20,11 @@ for i in girl_id:
         g_species.append(species[j])
         g_birth.append(birth[j])
     else:
+        count += 1
         g_species.append(None)
         g_birth.append(None)
-
+print(count)
+count = 0
 b_species, b_birth = [], []
 for i in boy_id:
     i = i.split('|')[:-1]
@@ -32,9 +34,10 @@ for i in boy_id:
         b_species.append(species[j])
         b_birth.append(birth[j])
     else:
+        count += 1
         b_species.append(None)
         b_birth.append(None)
-
+print(count)
 df_birth['分娩日期'] = pd.to_datetime(df_birth['分娩日期'], errors='coerce')
 df_birth['母豬離乳日期'] = pd.to_datetime(df_birth['母豬離乳日期'], errors='coerce')
 df_birth['初配日期'] = pd.to_datetime(df_birth['初配日期'], errors='coerce')
@@ -43,7 +46,7 @@ df_birth['母出生日期'] = pd.to_datetime(pd.Series(g_birth).values, errors='
 df_birth['公出生日期'] = pd.to_datetime(pd.Series(b_birth).values, errors='coerce')
 
 
-df['A'], df_f['場次'], df_f['部門'], df['B'], df['C'] = \
+df['A'], df_f['場次'], df_f['部門'], df_f['耳號'], df_f['年期'] = \
     df_birth['母ID'].str.split('|').str
 df_f['胎次'] = df_birth['胎次']
 df_f['生幾頭'] = df_birth['分娩活仔數']
