@@ -1,4 +1,4 @@
-台糖黑客松 hacktsc 組別: Caltrain
+2017/9/16 台糖黑客松 hacktsc 組別: Caltrain
 
 # 目標
 * 台糖2016豬隻族譜(繁殖)資料
@@ -6,8 +6,18 @@
   - 生的多，養的好，死的少（少死多賣售價高）
   - 可用利用品種和基因型進行分析，但基因型資料僅部門80有且亦不齊全
 
-各場豬隻數量分佈
-![image](https://github.com/almightybobo/hacktsc/blob/master/graph/1.png)
+# 聲明
+* 所有程式都是在很匆促的狀況下趕出來
+  - 不確定有沒有蟲
+  - 品質都很差，很多都是硬幹出來的，連自己看了都很痛苦
+  - 不過都是可以 work 的，但也只是能 work 而已
+  - 本人和協作者都當菸酒生，以後有心情再來改進呵呵
 
-各品種數量分佈
-![image](https://github.com/almightybobo/hacktsc/blob/master/graph/2.png)
+# 檔案路徑介紹
+  - data => 存放原始資料以及中間處理的資料
+    - raw_utf8 => 存放主辦單位所給的原始資料
+      - birth.csv => 分娩資料
+      - identification.csv => 種豬主檔
+      - sales.csv => 銷售主檔
+
+
