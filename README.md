@@ -5,7 +5,7 @@
   - 可用利用品種和基因型進行分析，但基因型資料僅部門80有且亦不齊全
 
 各場豬隻數量分佈
-![image](https://github.com/almightybobo/hacktsc/blob/master/1.png)
+![image](https://github.com/almightybobo/hacktsc/blob/master/graph/1.png)
 
 各品種數量分佈
-![image](https://github.com/almightybobo/hacktsc/blob/master/2.png)
+![image](https://github.com/almightybobo/hacktsc/blob/master/graph/2.png)
