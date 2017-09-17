@@ -43,4 +43,8 @@
       - sales_stat.py =>
     - ML => 進行 machine learning 所需程式，使用的 model 為 SVM
       - svm.py => 將 merge.csv 的欄位轉換成數值化的 feature，並分出 class(用活小豬重量分成四個 label) 來進行 training 以及 evaluation
-
+# 待改進部分
+  * label 的設計，現在只是很粗糙的分類，直接用 regression 出來的結果很差
+  * feature 量不足，現在能從 data 裡分析出的 feature 很少
+  * model 還尚待改進，還沒有 Grid 過
+  * 總之這就是一個很粗糙的作品...
