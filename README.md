@@ -46,5 +46,6 @@
 # 待改進部分
   * label 的設計，現在只是很粗糙的分類，直接用 regression 出來的結果很差
   * feature 量不足，現在能從 data 裡分析出的 feature 很少
+  * feature encode 的方式也仍然很粗糙，甚至不合邏輯
   * model 還尚待改進，還沒有 Grid 過
   * 總之這就是一個很粗糙的作品...
